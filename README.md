@@ -17,6 +17,15 @@ common representation for language.
 
 
 ### Inference: 
-
+image + source language(DE or EN) -> target language(DE or EN):
+```
+CUDA_VISIBLE_DEVICES=[gpu id] python pivoting.py --lr 0.001 --layer conv13 --data_folder=[data folder] --decoder_mode="lstm" \
+--checkpoint=[checkpoint] --data_name [your_data_name] --source [DE or EN] --target [DE or EN] --max_iter 20 --type normal 
+```
+source language(DE or EN) -> target language(DE or EN):
+```
+CUDA_VISIBLE_DEVICES=[gpu id] python pivoting.py --lr 0.01 --layer conv13 --data_folder=[data folder] --decoder_mode="lstm" \
+--checkpoint=[checkpoint] --data_name [your_data_name] --source [DE or EN] --target [DE or EN] --max_iter 40 --type random
+```
 ### Kudos:
 This project is developed based on [feedback-prop](https://github.com/uvavision/feedbackprop) and [image Captioning](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning/), thanks!

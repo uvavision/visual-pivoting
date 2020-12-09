@@ -17,3 +17,6 @@ common representation for language.
 
 
 ### Inference: 
+
+### Kudos:
+This project is developed based on feedback-prop(https://github.com/uvavision/feedbackprop) and image-captioning(https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning/), thanks!
